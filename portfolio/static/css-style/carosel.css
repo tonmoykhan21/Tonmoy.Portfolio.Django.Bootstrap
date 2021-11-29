@@ -1,0 +1,7 @@
+.carousel-item{
+    height: 400px;
+    min-height: 80vh;
+    background:no-repeat scroll center scroll;
+    -webkit-background-size:cover ;
+    background-size: cover;
+ }

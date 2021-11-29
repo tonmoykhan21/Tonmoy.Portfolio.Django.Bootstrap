@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title_block %}Tonmoy Planet{% endblock  %}</title>
+    {% load static %}
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carosel.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container">
+    <a class="navbar-brand" href="#">Tonmoy Planet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--navbar end-->
+<!--hero section start-->
+<div id="home" class="container-fluid">
+  <div class="row">
+   <div class="col-lg-6 text-white">
+     <center>
+     <div class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-caption  ">
+      <div class="hero-text1">
+        <h1>Hello !</h1>
+        <h1 class="mb-4 mt-3">I'm <span class="text-warning">Waliul Islam Tonmoy</span></h1>
+        <h2 class="mb-4">A  Web Designer & Developer</h2>
+        <p><a href="#contact-section" class="btn rounded-pill bg-primary">Hire me</a> <a href="" class="btn rounded-pill bg-danger">My works</a></p>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="text">
+          <span class="subheading">Hello!</span>
+          <h1 class="mb-4 mt-3">I'm a  <span>Full Stack</span> <span>  web designer & Developer</span> </h1>
+          <p><a href="#contact-section" class="btn rounded-pill bg-primary">Hire me</a> <a href="#projects-section" class="btn rounded-pill bg-danger">My works</a></p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+     <center>
+   
+   </div>
+   <div class="col-lg-6">
+       <img class="hero-img" src="{% static '/images/tonu.png' %}" alt="">
+   </div>
+  </div>
+</div>
+<!--hero section end-->
+     <!--about section start-->
+     <div id="about" class="section-title">
+       <h1 class="section-text">About</h1>
+     </div>
+       
+       <div class="container">
+         <div class="about-section">
+            <div class="row">
+              <div class="col-lg-6 ">
+                  <img class="img-fluid about-img" src="{% static '/images/tonmoy.jpg' %}" alt="">
+              </div>
+              <div class="col-lg-6 col-sm-6 col-md-6">
+              <div class="heading-section ftco-animate">
+                  <h2 class="mb-5 text-shadow">About Me</h2>
+                  <p class="text">I am Waliul islam Tonmoy, Web Designer & Developer from Dhaka, Bangladesh. I have rich experience in web site design, building, customization and developed any website.</p>
+                <ul class="about-info mt-4 px-md-0 px-2 text">
+                  <li class="d-flex"><span>Name:</span> <span>Waliul islam</span></li>
+                  <li class="d-flex"><span>Nickname:</span> <span>Tonmoy</span></li>
+                  <li class="d-flex"><span>Address:</span> <span>Dattapara, Birulia, Savar, Dhaka</span></li>
+                  <li class="d-flex"><span>Zip code:</span> <span>1216</span></li>
+                  <li class="d-flex"><span>Email:</span> <span>tonmoykhandiu@gmail.com</span></li>
+                </ul>
+              </div> 
+
+                <div class="cv">
+                  <button class="btn rounded-pill bg-warning"><a href="#">Download Cv</a></button>
+                </div>
+
+                 
+              </div>
+            </div>
+         </div>
+       </div>
+     <!--about section end-->
+     <!--experience section end-->
+     <div id="experience" class="section-title">
+       <h1 class="section-text">Experience</h1>
+     </div>
+     <p class="text-center"> I have professional  experience in Full Stack Design And Development . I have gathered so much knowledge about web design, web development.Below I have described all the part.</p>
+
+<div class="experience-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+<div class="card text-dark rounded shadow-dark padding-30 overflow-hidden">
+<!-- timeline item -->
+    <div class="container">
+    <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+     <span class="time">2019 - 2022</span>
+     <h3 class="title">B.Sc in CSE</h3>
+     <p>I started  study B.Sc in Computer Science and Engineering from Daffodil Internation University.</p>
+    </div>
+<!-- timeline item -->
+  <div class="container">
+  <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+    <span class="time">2015</span>
+    <h3 class="title">H.S.C</h3>
+    <p>I have completed my H.S.C from the Rajshahi board and my group was science. My college name was Quadirabad Cantonment Sappar collage.</p>
+  </div>
+
+<!-- timeline item -->
+  <div class="container ">
+  <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+    <span class="time">2013</span>
+    <h3 class="title">S.S.C</h3>
+    <p>I have completed my S.S.C from the Rajshahi board and my group was science. My School name was  Chadpur(1)high school.</p>
+    </div>
+  </div>
+  </div>
+
+   <div class="col-lg-6">
+     <div class="card text-dark rounded shadow-dark padding-30 overflow-hidden">
+<!-- timeline item -->
+    <div class="container">
+    <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+     <span class="time">2021-present</span>
+     <h3 class="title">Full Stack Web Design And Development</h3>
+     <p>I started  learning Full stack Development (React +Django) in skill.jobs learning platform</p>
+    </div>
+<!-- timeline item -->
+  <div class="container">
+  <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+    <span class="time">2020</span>
+    <h3 class="title">Web Designer</h3>
+    <p>Besides my B.Sc I also started a web design course so far I completed all the details of web design.</p>
+  </div>
+
+<!-- timeline item -->
+  <div class="container ">
+  <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+    <span class="time">2019-present</span>
+    <h3 class="title">Domain Hosting</h3>
+    <p>>Besides my B.Sc I also started a job in Domain Hosting Comapany to gain Knowladge about it .</p>
+    </div>
+  </div>
+   </div>
+
+</div>
+     <br><br><br>
+     <!--experience section end-->
+     <!--service section start-->
+<section class="" id="services">
+    <div id="experience" class="section-title">
+      <h1 class="section-text ">Services</h1>
+    </div>
+    <p class="text-center">Here, I offer myself a web designer, web developer and Domain Hosting seller.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+         <div class="card card-style  mb-5">
+             <div class="card-body bg-dark text-white ">
+               <p class="text-center"><i class="fab fa-3x fa-searchengin"></i></p>
+               <h5 class="card-title text-center">Web Development</h5>
+               <p class="card-text text-center">-</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+        <div class="card card-style  mb-4">
+             <div class="card-body bg-dark text-white ">
+               <p class="text-center"><i class="fab fa-3x fa-searchengin"></i></p>
+               <h5 class="card-title text-center">Web Design</h5>
+               <p class="card-text text-center">-</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-style  mb-4">
+             <div class="card-body bg-dark text-white ">
+               <p class="text-center"><i class="fab fa-3x fa-searchengin"></i></p>
+               <h5 class="card-title text-center">Domain Hosting</h5>
+               <p class="card-text text-center">-</p>
+              </div>
+          </div>
+    </div>
+  
+</section>
+
+     <!--service section end-->
+     <!--my skills start-->
+     <div id="skills" class="section-title">
+       <h1 class="section-text">My Skills</h1>
+     </div>
+     <p class="text-center">As you already know that I am an expert in web design, web development . I have some skills also. These are shown below.</p>
+
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+  <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Html5</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-success color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+          <span>95% </span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Css3</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-warning color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+          <span>80% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Bootstrap</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-success color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+          <span>95% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Javascripts</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-primary color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+          <span>85% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>JQuery</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-danger color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+          <span>70% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>         
+<div class="col-lg-6">
+       <div class="progress-wrap ">
+      <h3>Python</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-success color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+          <span>80% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Django</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-primary color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+          <span>90% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>WordPress</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-warning color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+          <span>80% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Domain Hosting</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-dark color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+          <span>70% (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <!--progress -->
+    <div class="progress-wrap ">
+      <h3>Java</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar progress-bar-striped progress-bar-animated bg-danger color-4" role="progressbar" aria-valuenow="950" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+          <span>80% (Learning)</span>
+        </div>
+      </div>
+    </div> 
+</div>
+</div>
+</div>
+</div>
+
+     <br><br><br><br><br>
+     <!--my skills end-->
+     <!--project section start-->
+     <div id="skills" class="section-title">
+       <h1 class="section-text">Project</h1>
+     </div>
+     <p class="text-center">I have also completed some projects. After completed my Skill development, here I have given some of my project's demo</p>
+     <!--project section end-->
+<!--Hire Me section start-->
+<div class="">
+  <div class="hire-me">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div >
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0">
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/c1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-weight-bold">i am <span class="text-warning">Looking </span>for a <span class="text-warning">Job</span></h1>
+        <h3>I want to join somewhere, where I can execute my educational strength and learn for future/father betterment of my career.</h3>
+        <button class="btn btn-warning btn-lg rounded-pill">Hire Me</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<!--Hire Me section end-->
+     <!--contact start-->
+    <section class="bg-white text-dark">
+    <div id="contact" class="section-title">
+       <h1 class="section-text">Contact</h1>
+     </div>
+     <p class="text-center">These are all where I can available all the time. Feel free to contact me.</p>
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+           <form action="" method="POST">
+           {% csrf_token %}
+           <button class="btn btn-success">Send Email</button>
+           </form>
+        </div>
+        <div class="col-lg-4">
+         <h3><i class="fa-1x  fas fa-map-marker-alt bg-dark text-white"></i></h3>
+         <p>Dattapara, Birulia, Savar, Dhaka-1216.</p>
+         <h3><i class="fas fa-envelope"></i></h3>
+         <p>tonmoykhandiu@gmail.com</p>
+        </div>
+      </div>
+     </div>
+    </section> 
+     <!--contact end-->
+<section>
+ <footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-4 ">
+      <h3 class="font-weight-bold text-uppercase">About</h3>
+      <p>I am Waliul Islam Tonmoy, Web Designer & Developer from Dhaka, Bangladesh. I have rich experience in web site design, building, customization and developed any website</p>
+      </div>
+      <div class="col-lg-2">
+       <h3 class="font-weight-bold text-uppercase">Links</h3>
+       <p>
+          <a href="#home" class="text-white" style="text-decoration:none;">Home</a>
+       </p>
+       <p>
+          <a href="#about" class="text-white" style="text-decoration:none;">About</a>
+       </p>
+       <p>
+          <a href="#experience" class="text-white" style="text-decoration:none;">Resume</a>
+       </p>
+       <p>
+          <a href="#services" class="text-white" style="text-decoration:none;">Services</a>
+       </p>
+       <p>
+          <a href="#skills" class="text-white" style="text-decoration:none;">Skills</a>
+       </p>
+       <p>
+          <a href="#project" class="text-white" style="text-decoration:none;">Project</a>
+       </p>
+        <p>
+          <a href="#contact" class="text-white" style="text-decoration:none;">Contact</a>
+       </p>
+      </div>
+
+      <div class="col-lg-3">
+       <h3 class="font-weight-bold text-uppercase">Services</h3>
+       <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Web Design</a>
+       </p>
+       <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Web Development</a>
+       </p>
+       <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Domain Hosting</a>
+       </p>
+      </div>
+      <div class="col-lg-3">
+       <h3 class="font-weight-bold text-uppercase">Contact</h3>
+       <p>Dattapara, Birulia, Savar, Dhaka-1216.</p>
+       <p>	tonmoykhandiu@gmail.com</p>
+      </div>
+    </div>
+      <!--footer social icon-->
+      <div class="container">
+       <div class="row">
+        <div class="col-lg-12 col-md-6 col-sm-4">
+         <div class="social-icon">
+           <ul class="list-unstyled list-inline text-center pt-4">
+             <li class="list-inline-item">
+               <i class="fab fa-facebook fa-2x bg-dark text-white btn btn-floating"></i>
+             </li>
+             <li class="list-inline-item">
+               <i class="fab fa-instagram bg-light text-black btn btn-floating"></i>
+             </li>
+             <li class="list-inline-item">
+               <i class="fab fa-linkedin fa-2x bg-dark text-white btn btn-floating"></i>
+             </li>
+             <li class="list-inline-item">
+               <i class="fab fa-github fa-2x bg-dark text-white btn btn-floating"></i>
+             </li>
+           </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!--footer social end-->
+      <!--footar copyright start-->
+      <div class="container-fluid text-center">
+      <p>Copyright &copy;
+       <script>
+        document.write(new Date().getFullYear());
+        </script> All rights reserved TonmoyPlanet.com <i class="fas fa-heart fa-2x" style="color:red;"></i> By <a href="#" target="blank" class="text-white" style="text-decoration:none;">Waliul islam Tonmoy</a>
+      </p>
+      </div>
+      
+      
+      <!--footar copyright end-->
+
+  </div>
+ </footer>
+</section>
+
+</body>
+</html>

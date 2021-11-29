@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color:white;
+}
+.hero-img{
+min-height: 90vh;
+height: 600px;
+}
+
+.carousel-item{
+    min-height: 400px;
+    height: 400px;
+    
+}
+.hero-text1{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.title-text{
+    font-size: 900px;
+}
+.about-me{
+    padding-top: 100px;
+}

@@ -1,0 +1,33 @@
+.section-title{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+}
+.section-text{
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+.about-img{
+    min-height: 90vh;
+    height: 100px;
+    width: 450px;
+    min-width: 100wh;
+}
+.text-shadow{
+    font-size: 70px;
+    font-weight: bold;
+}
+.card-style{
+    background-color: #1A1A1A;
+    border: 1px black;
+    font-size: 25px;
+
+}
+.carousel-item{
+   height: 500px;
+   min-height: 90vh;
+   background:no-repeat scroll center scroll;
+   -webkit-background-size:cover ;
+   background-size: cover;
+}
